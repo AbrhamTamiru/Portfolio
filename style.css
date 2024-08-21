@@ -1,0 +1,333 @@
+      /* Basic Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        background-color: #f8f9fa;
+        color: #333;
+    } 
+    
+    #home {
+        text-align: center;
+        padding: 100px 0px;
+        position: relative;
+        height: 400px;
+        color: white;
+        top: 0px;
+        background: url('https://img.freepik.com/free-vector/futuristic-technological-background_79603-1096.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1717286400&semt=ais_user') no-repeat center center/cover;
+
+    }
+    #home .header-content {
+        background-color: #d1d5db; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        justify-content: center;
+        margin: 0 20%;
+    
+
+    }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        padding: 2.5rem 0;
+        left: 100px;
+       
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 1.5rem 1rem;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #007bff;
+    }
+    #home h1 {
+        font-size: 3rem;
+        border-radius: 25%;
+        width: 600px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    #home img {
+
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    #home .social-links {
+        margin-top: 40px; /* Specific top margin for social-links */
+    }
+
+    .intro-text {
+        margin: 20px 0;
+    }
+
+    .social-links a {
+        color: white;
+        margin: 0 15px; /* Increased horizontal margin */
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 25px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .social-links a:hover {
+        background-color: white;
+        color: #007bff;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    #skills{
+        padding-top: 10px;
+    }
+    #education{
+        padding-top: 10px;
+
+    }
+    #experience{
+        padding-top: 100px;
+    }
+    #contact{
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+    /*project style*/
+    .project-section-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* This vertically centers the items in the container */
+        justify-content: space-between; 
+        padding: 60px 10px;
+        background-color: inherit ;
+        width: 800px;
+        height: 300px;
+        margin: auto; 
+    
+    }
+    .project-body-content {
+        padding: 15px 20px;
+        background-color: white;
+        width: 60%;
+    }
+    .project-tech-icons img {
+        width: 30px;
+        height: 30px;
+    }
+    .sample-image img{
+        width: 300px;
+        height: 250px;
+        right: -500px;
+    }
+    .project-link a {
+        color: rgba(7, 0, 0, 0.897);
+        margin: 0 15px; 
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid rgb(45, 43, 43);
+        border-radius: 25px;
+        
+    }
+    .project-link a:hover {
+        background-color: rgba(10, 10, 10, 0.801);
+        color: #007bff;
+    }
+/*education style*/
+    #education .section-content{
+        background-color: white ;
+        width: 500px;
+        height: 330px;
+        margin: auto; 
+    }
+    #education .section-content p1{
+        padding-left: 50px;
+        display: block;
+        padding-top: 10px;
+        height: 30px;
+    }
+    #education .section-content p{
+        display: block;
+        font-style:italic;
+        font-size: large;
+        
+    }
+    #education .section-content:hover{
+        width: 600px;
+        background-color: #ccc;
+    }
+
+    #education  img{
+        width: 30px;
+    }
+
+    #education .education-link a {
+        color: rgba(7, 0, 0, 0.897);
+        margin: 0 15px; 
+        text-decoration: none;
+        padding: 8px 10px ;
+        border: 2px solid rgb(45, 43, 43);
+        border-radius: 25px;
+        margin-top: 
+    }
+    #education .education-link a:hover {
+        background-color: rgba(10, 10, 10, 0.801);
+        color: #007bff;
+    }
+
+/*skills style*/
+    #skills .section-content{
+        background-color: #f4f6f9;
+        width: 600px;
+        height: 300px;
+        margin: auto; 
+        
+    }
+    #skills img{
+        width: 80px;
+        height: 80px;
+        border-radius: 25px;
+        margin: 0 15px; /* Increased horizontal margin */
+    }
+    #skills img:hover{
+        width: 100px;
+        height: 100px;
+    }
+    #experience .section-content{
+        background-color: #f4f6f9;
+        width: 800px;
+        height: 300px;
+        margin: auto;
+
+    }
+/*contact style*/
+    #contact .section-content{
+        background-color: #f4f6f9;
+        width: 500px;
+        height: 300px;
+        margin: auto;
+        
+    }
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+    .contact-form .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .contact-form .form-group textarea {
+        resize: vertical;
+        height: 150px;
+    }
+    .contact-form button {
+        padding: 10px;
+        background: #007bff;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact-form button:hover {
+        background: #0056b3;
+    }
+/*experience style*/
+    .experience-section-content {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: inherit ;
+        width: 500px;
+        height: 410px;
+        margin: auto; 
+    }
+    .experience-section-content .body-content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .experience-section-content .experience-time {
+        position: absolute;
+        top: 100px;
+        right: -180px;
+        font-size: 14px;
+        color: #888;
+        width: 200px;
+        text-align: right;
+    }
+
+    .experience-section-content .experience-time span {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f6eeee;
+        border-radius: 6px;
+    }
+
+    
+    .experience-section-content2 {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 20px 0;
+        background-color: inherit ;
+        width: 500px;
+        height: 300px;
+        margin: auto; 
+    
+    }
+    .experience-section-content2 .body-content2 {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+        width: 100%;
+        margin: auto;
+        right: -205px;
+    }
+    .experience-section-content2 .experience-time2 {
+        position: absolute;
+        top: 25px;
+        font-size: 14px;
+        color: #888;
+        width: 200px;
+        padding: 5.5rem 1rem;
+    }
+
+    .experience-section-content2 .experience-time2 span {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f6eeee;
+        border-radius: 6px;
+    }
