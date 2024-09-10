@@ -246,43 +246,56 @@
         <h2 class="section-title">Contact Me</h2>
         <div class="section-content">
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init({
-              publicKey: "RZYz8YlR4F9NubCrR",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                emailjs.sendForm('service_v5ex26r', 'template_892zo2z', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
+            <script type="text/javascript">
+                window.onload = function() {
+                    emailjs.init('RZYz8YlR4F9NubCrR'); 
+            
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault(); // Prevent default form submission
+            
+                        // Clear any previous messages
+                        document.getElementById('form-message').textContent = ''; 
+            
+                        emailjs.sendForm('service_v5ex26r', 'template_892zo2z', this)
+                        .then(function(response) {
+                            console.log('SUCCESS!', response.status, response.text); // Log for success
+            
+                            // Show success message in the UI
+                            document.getElementById('form-message').textContent = 'Message sent successfully!';
+                            document.getElementById('form-message').style.color = 'green'; // Styling success message
+                        }, function(error) {
+                            console.log('FAILED...', error); // Log for failure
+            
+                            // Show failure message in the UI
+                            document.getElementById('form-message').textContent = 'Failed to send the message. Please try again later.';
+                            document.getElementById('form-message').style.color = 'red'; // Styling error message
+                        });
                     });
-            });
-        }
-    </script>
-        <p>Please contact at abrham.tamiru01@student.csulb or though this form</p>
-        <div class="contact-form">
-            <form id="contact-form">
-                <label>Name</label>
-                <input type="text" name="user_name" required>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        </div>
+                }
+            </script>
+            
+            <!-- Contact Form -->
+            <p>Please contact me at abrham.tamiru01@student.csulb or through this form:</p>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <label>Name</label>
+                    <input type="text" name="user_name" required>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="user_email" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            
+                <!-- Placeholder for form submission message -->
+                <p id="form-message"></p>
+            </div>  
     </section>
 </body>
 </html>
